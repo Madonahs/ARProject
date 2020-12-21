@@ -1,0 +1,3 @@
+include ':garden'
+include ':app'
+rootProject.name = "ARProject"
