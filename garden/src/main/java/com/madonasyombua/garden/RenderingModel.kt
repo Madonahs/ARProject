@@ -5,7 +5,7 @@ import com.google.ar.sceneform.math.Vector3
 /**
  * @author madona
  * This is the rendering model that will be drawn on the AR frame
- * @param modelName this is the name of the model
+ * @param name this is the name of the model
  * @param model this is the rendering source
  * @param direction this is usually a default direction of the model when initializing
  * @param scaleType is a default scale of the model when initializing
@@ -13,7 +13,7 @@ import com.google.ar.sceneform.math.Vector3
  */
 
 data class RenderingModel(
-    val modelName: String,
+    val name: String,
     val model: String,
     val direction: Vector3 = Vector3(0f, 0f, 0f),
     val scaleType: Float = 1f,

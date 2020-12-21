@@ -45,7 +45,7 @@ object ModelRenderer {
     ) {
         val anchorNode = AnchorNode(anchor)
         TransformableNode(fragment.transformationSystem).apply {
-            name = renderingModel.modelName
+            name = renderingModel.name
             localPosition = renderingModel.localPosition
             this.renderable = renderable
             translationController.isEnabled =
@@ -88,7 +88,7 @@ object ModelRenderer {
     ) {
         val anchorNode = AnchorNode(anchor)
         TransformableNode(fragment.transformationSystem).apply {
-            name = renderingModel.modelName
+            name = renderingModel.name
             localPosition = renderingModel.localPosition
             this.renderable = renderable
             translationController.isEnabled = false
@@ -112,7 +112,7 @@ object ModelRenderer {
     ) {
         val anchorNode = AnchorNode(anchor)
         TransformableNode(fragment.transformationSystem).apply {
-            name = renderingModel.modelName
+            name = renderingModel.name
             localPosition = renderingModel.localPosition
             this.renderable = renderable
             setParent(anchorNode)

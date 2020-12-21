@@ -46,7 +46,6 @@ object ModelAnimation {
 
     /**
      * This rotates a target node to a desired position
-     *
      */
 
     inline fun rotateModel(
