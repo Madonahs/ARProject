@@ -56,12 +56,13 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
 
     def hiltVersion = '1.0.0-alpha02'
-
     implementation "androidx.hilt:hilt-common:$hiltVersion"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hiltVersion"
     implementation "com.google.dagger:hilt-android:2.30.1-alpha"
     kapt "com.google.dagger:hilt-android-compiler:2.30.1-alpha"
     implementation "androidx.hilt:hilt-compiler:$hiltVersion"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
 
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
