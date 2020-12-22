@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -47,12 +48,20 @@ dependencies {
     implementation "com.google.ar.sceneform.ux:sceneform-ux:1.17.1"
     implementation "com.google.ar.sceneform:core:1.17.1"
     implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.navigation:navigation-fragment:2.2.2'
-    implementation 'androidx.navigation:navigation-ui:2.2.2'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
+
+    def hiltVersion = '1.0.0-alpha02'
+
+    implementation "androidx.hilt:hilt-common:$hiltVersion"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hiltVersion"
+    implementation "com.google.dagger:hilt-android:2.30.1-alpha"
+    kapt "com.google.dagger:hilt-android-compiler:2.30.1-alpha"
+    implementation "androidx.hilt:hilt-compiler:$hiltVersion"
 
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
