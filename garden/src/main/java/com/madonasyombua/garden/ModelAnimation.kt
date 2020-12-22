@@ -19,13 +19,13 @@ object ModelAnimation {
      * @param anchorNode this is a target [Node] for translating
      * @param vectorPosition this is a position for translating the [Node]
      * @param durationTime this is the duration for the animation execution
-     * @param doWhenFinished this is a lambda for executing after the animation is done
+     * @param whenFinished this is a lambda for executing after the animation is done
      */
     inline fun translateModel(
         anchorNode: Node,
         vectorPosition: Vector3,
         durationTime: Long = 150L,
-        crossinline doWhenFinished: () -> Unit = {}
+        crossinline whenFinished: () -> Unit = {}
     ) {
         ObjectAnimator().apply {
             setAutoCancel(false)
@@ -39,8 +39,8 @@ object ModelAnimation {
             setEvaluator(Vector3Evaluator())
             interpolator = AccelerateDecelerateInterpolator()
             start()
-        }.doWhenFinished {
-            doWhenFinished()
+        }.whenFinished {
+            whenFinished()
         }
     }
 
@@ -65,7 +65,7 @@ object ModelAnimation {
             setEvaluator(QuaternionEvaluator())
             interpolator = AccelerateDecelerateInterpolator()
             start()
-        }.doWhenFinished {
+        }.whenFinished {
             doWhenFinished()
         }
     }

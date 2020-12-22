@@ -3,7 +3,7 @@ package com.madonasyombua.garden
 import android.animation.Animator
 import android.animation.ObjectAnimator
 
-inline fun ObjectAnimator.doWhenFinished(
+inline fun ObjectAnimator.whenFinished(
     crossinline block: () -> Unit
 ) {
     addListener(object : Animator.AnimatorListener {

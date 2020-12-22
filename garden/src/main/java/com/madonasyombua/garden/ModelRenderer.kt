@@ -66,7 +66,7 @@ object ModelRenderer {
                                 localPosition.y + 0.25f,
                                 localPosition.z
                             ),
-                            doWhenFinished = {
+                            whenFinished = {
                                 val localPosition = renderingModel.localPosition
                                 ModelAnimation.translateModel(node, localPosition)
                             }
