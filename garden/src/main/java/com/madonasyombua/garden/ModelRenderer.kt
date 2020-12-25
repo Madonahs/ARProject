@@ -1,3 +1,5 @@
+@file:Suppress("Annotator", "Annotator", "Annotator", "Annotator", "Annotator", "Annotator")
+
 package com.madonasyombua.garden
 
 import android.app.AlertDialog
@@ -35,7 +37,7 @@ object ModelRenderer {
                 return@exceptionally null
             }
     }
-
+/*
     // add my sheep on the scene
     fun addAnimalsOnGardenScene(
         fragment: ArFragment,
@@ -162,7 +164,7 @@ object ModelRenderer {
             select()
         }
 
-    }
+    }*/
 
     private fun getRandomPosition(): Float {
         val position = Random.nextFloat()

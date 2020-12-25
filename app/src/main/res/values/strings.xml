@@ -4,4 +4,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="sheep_card_name">Sheeps Fun Fact</string>
+    <string name="sheep_card_desc">1. Sheep are herbivores, which means their diet does not include meat.\n2. Lambs walk just minutes after they are born, though they are still dependent on their mothers for the first four to six months of their lives. \n3. Sheep can recognize up to 50 other sheep faces and remember them for two years</string>
+    <string name="sheep_card_action_label">Moving</string>
+    <string name="welcome">Welcome to the farm</string>
+    <string name="ar_demo">AR Demo</string>
 </resources>

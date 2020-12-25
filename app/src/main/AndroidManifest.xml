@@ -12,27 +12,27 @@
         android:name="android.hardware.camera.ar"
         android:required="true" />
 
-    <meta-data
-        android:name="com.google.ar.core"
-        android:value="required" />
-
     <application
-        android:name=".AnimalAR"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ARProject">
-        <activity
-            android:name=".ui.GardenAR"
-            android:label="@string/title_activity_garden_a_r"/>
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+        <activity android:name=".ui.AnimalShapeActivity"
+            android:screenOrientation="locked"/>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
